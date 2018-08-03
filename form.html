@@ -1,29 +1,29 @@
 <html>
-<head>
-<script type="text/javascript">
-function sub()
-{
-if(document.getElementById("t1").value == "")
-alert("Please enter your name");
-else if(document.getElementById("t2").value == "")
-alert("Please enter a password");
-else if(document.getElementById("t2").value != document.getElementById("t3").value)
-alert("Please enter correct password");
-else if(document.getElementById("t4").value == "")
-alert("Please enter your address");
-else
-alert("Form has been submitted");
-}
-</script>
-</head>
-<body>
-<p>
-User Name:<input type="text" id="t1"><br><br>
-Password:<input type="text" id="t2"><br><br>
-Confirm Password:<input type="text" id="t3"><br><br>
-Address:<textarea rows="2" cols="25" id="t4"></textarea><br><br>
-<input type="button" value="Submit" onclick="sub()">
-<input type="reset" value="Clear All">
-</p>
-</body>
+  <head>
+  <script type="text/javascript">
+    function submit()
+     {
+        if(document.getElementById("name").value == "")
+        alert("Please enter your name");
+        else if(document.getElementById("password").value == "")
+        alert("Please enter a password");
+        else if(document.getElementById("password").value != document.getElementById("confirm_password").value)
+        alert("Please enter correct password");
+        else if(document.getElementById("address").value == "")
+        alert("Please enter your address");
+        else
+        alert("Form has been submitted");
+    }
+  </script>
+  </head>
+  <body>
+    <p>
+    User Name:<input type="text" id="name"><br><br>
+    Password:<input type="text" id="password"><br><br>
+    Confirm Password:<input type="text" id="confirm_password"><br><br>
+    Address:<textarea rows="2" cols="25" id="address"></textarea><br><br>
+    <input type="button" value="Submit" onclick="submit()">
+    <input type="reset" value="Clear All">
+    </p>
+  </body>
 </html>
